@@ -1,0 +1,220 @@
+body {
+	font-family:"RalewayRegular", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+}
+header{
+	height: 600px;
+  background-image: url(../img/title.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+ nav{
+ 	height: 94px;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+ } 
+ #top_menu{
+	 line-height: 94px;
+ }
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+	display: inline-block;
+  padding: 0 30px;
+}
+.menu li a{
+	font-family: 'RalewayBold', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+.menu li a:hover, .menu li a:focus{
+	text-decoration: none;
+  color: #e1e1e1;
+}
+
+.navbar-toggle{
+	position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+}
+
+.navbar-header i{
+	font-size: 20px;
+  color: #fff;
+  margin: 20px;
+}
+.profile_block{
+	margin-top: 130px;
+	padding:30px;
+	background-color: #eff6ff;
+	overflow: auto;
+	font-family: 'RalewayRegular', sans-serif;
+}
+
+.profile_block img{
+	margin-right: 30px;
+}
+
+/*SOCIAL BLOCK*/
+.social{
+	background-color: #a6d964;
+	text-align: center;
+}
+.social a i{
+	font-size: 35px;
+	padding:20px 30px;
+	color:#d5d5d5;
+}
+.resume{
+	margin-top: 40px;
+	text-align: center;
+}
+.my_btn{
+	background-color: #a6d964;;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 20px;
+  opacity: 1;
+}
+.my_btn:hover{
+	opacity: 0.75;
+}
+
+/*SKILL SECTION*/
+#skill{
+	margin-top: 50px;
+}
+#skill h3{
+	text-align: center;
+}
+.skills_block{
+	margin-top: 50px;
+}
+
+.score p {
+  background: #a6d964;
+  height: 10px;
+}
+
+.skill-percent {
+  float: right;
+  color: #777777;
+  margin: 0 10px 15px 0;
+}
+.skill_base h3{
+	display:inline-block;
+	margin:0 0 15px 0;
+}
+
+/*PORTFOLIO SECTION*/
+#portfolio h3{
+	text-align: center;
+	margin-top: 70px;
+}
+.carousel{
+    background: #a6d964;
+    margin: 40px 0;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
+/*EDUCATION SECTION*/
+#education h3{
+	text-align: center;
+}
+.education_bl{
+	text-align: center;
+	padding:10px 0;
+	border:1px solid #a6d964;
+	border-top:6px solid #a6d964;
+	position:relative;
+	-webkit-filter: drop-shadow(0 5px 4px rgba(113,158,0,3.8));
+        -moz-box-shadow: 0 5px 4px rgba(113,158,0,3.8);
+        filter: drop-shadow(0 5px 4px rgba(113,158,0,3.8));
+  background-color: white;
+}
+
+.bl_left:after,
+.bl_right:after,
+.bl_left:before,
+.bl_right:before{
+	 bottom: 33%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+}
+.bl_left:after{
+	border-color: rgba(255, 255, 255, 0);
+        border-left-color: #ffffff;
+        border-width: 19px; 
+        left: 100%;
+}
+.bl_left:before{
+	border-color: rgba(113, 158, 206, 0);
+        border-left-color: #a6d964;
+        border-width: 19px;
+        margin-left: 1px;
+        left: 100%;
+}
+
+.bl_right:after{
+	border-color: rgba(255, 255, 255, 0);
+        border-right-color: #ffffff;
+        border-width: 19px; 
+        margin-left: -19px;
+        right: 100%;
+}
+.bl_right:before{
+	border-color: rgba(113, 158, 206, 0);
+        border-right-color: #a6d964;
+        border-width: 20px;
+        margin-left: -18px;
+        right: 100%;
+}
+.bl_right,
+.bl_left{
+	margin-bottom: 60px;
+}
+
+.col_right{
+	margin-top: 60px;
+}
+
+/*MY INTERESTS*/
+#interests h3{
+	text-align: center;
+	margin: 40px 0;
+}
+.interest_bl i{
+	font-size: 70px;
+	color:#d0debe;
+	text-align: center;
+}
+.interest_bl{
+	text-align: center;
+}
