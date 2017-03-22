@@ -48,6 +48,10 @@
 			font-size: 12px;
 			margin:20px 0 0 0;
 		}
+		.timeline > li > .timeline-panel{
+			padding:5px;
+			width: 40%;
+		}
 	
 	}
 
@@ -73,6 +77,11 @@
 		.education_bl{
 			font-size: 12px;
 			margin:20px 0 0 0;
+		}
+
+		.timeline > li > .timeline-panel{
+			padding:5px;
+			width: 40%;
 		}
 }
 

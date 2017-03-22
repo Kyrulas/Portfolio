@@ -141,68 +141,132 @@ header{
 }
 
 /*EDUCATION SECTION*/
-#education h3{
-	text-align: center;
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
 }
-.education_bl{
-	text-align: center;
-	padding:10px 0;
-	border:1px solid #a6d964;
-	border-top:6px solid #a6d964;
-	position:relative;
-	-webkit-filter: drop-shadow(0 5px 4px rgba(113,158,0,3.8));
-        -moz-box-shadow: 0 5px 4px rgba(113,158,0,3.8);
-        filter: drop-shadow(0 5px 4px rgba(113,158,0,3.8));
-  background-color: white;
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
 }
-
-.bl_left:after,
-.bl_right:after,
-.bl_left:before,
-.bl_right:before{
-	 bottom: 33%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
 }
-.bl_left:after{
-	border-color: rgba(255, 255, 255, 0);
-        border-left-color: #ffffff;
-        border-width: 19px; 
-        left: 100%;
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
 }
-.bl_left:before{
-	border-color: rgba(113, 158, 206, 0);
-        border-left-color: #a6d964;
-        border-width: 19px;
-        margin-left: 1px;
-        left: 100%;
+.timeline > li:after {
+  clear: both;
 }
-
-.bl_right:after{
-	border-color: rgba(255, 255, 255, 0);
-        border-right-color: #ffffff;
-        border-width: 19px; 
-        margin-left: -19px;
-        right: 100%;
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
 }
-.bl_right:before{
-	border-color: rgba(113, 158, 206, 0);
-        border-right-color: #a6d964;
-        border-width: 20px;
-        margin-left: -18px;
-        right: 100%;
+.timeline > li:after {
+  clear: both;
 }
-.bl_right,
-.bl_left{
-	margin-bottom: 60px;
+.timeline > li > .timeline-panel {
+  width: 45%;
+  float: left;
+  border: 2px solid #a6d964;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
-
-.col_right{
-	margin-top: 60px;
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -17px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #a6d964;
+  
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -17px;
+  background-color: #a6d964;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+	border-right: 0 solid #a6d964;
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -17px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
 }
 
 /*MY INTERESTS*/
@@ -217,4 +281,21 @@ header{
 }
 .interest_bl{
 	text-align: center;
+}
+
+/*CONTACT ME SECTION*/
+#contact h3{
+	text-align: center;
+	margin: 50px 0;
+}
+.form-area{
+	background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid grey;
+}
+.form-area button{
+	background-color: #a6d964;
+	color:#fff;
+	width: 160px;
 }
